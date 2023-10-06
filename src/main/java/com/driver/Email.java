@@ -34,14 +34,14 @@ public class Email {
             int countspecial=0;
             for(int i=0;i<newPassword.length();i++){
                 if(newPassword.length()<8)
-                    break;
+                    return;
                 if(newPassword.charAt(i)>'0' && newPassword.charAt(i)<'9'){
                     countdigit++;
                 }
                 if(newPassword.charAt(i)>'A' && newPassword.charAt(i)<'Z'){
                     countupper++;
                 }
-                if(newPassword.charAt(i)>'a' && newPassword.charAt(i)>'z')
+                if(newPassword.charAt(i)>'a' && newPassword.charAt(i)<'z')
                     countlower++;
 
                 countspecial++;

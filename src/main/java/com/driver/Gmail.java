@@ -32,7 +32,7 @@ public class Gmail extends Email {
     public void setInboxCapacity(int inboxCapacity) {
         this.inboxCapacity = inboxCapacity;
     }
-   public List<mails>inbox=new ArrayList<>();
+    public List<mails>inbox=new ArrayList<>();
     public List<mails>trash=new ArrayList<>();
 
     public void receiveMail(Date date, String sender, String message){
